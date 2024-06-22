@@ -5,16 +5,18 @@ class RCircularContainer extends StatelessWidget {
     super.key,
     this.width,
     this.height,
-    required this.radius,
-    required this.padding,
+    this.radius = 100,
+    this.padding = 0,
     this.child,
-    required this.backgroundColor,
+    required this.backgroundColor, 
+    this.margin,
   });
 
   final double? width;
   final double? height;
   final double radius; 
   final double padding;
+  final EdgeInsets? margin;
   final Widget? child;
   final Color backgroundColor;
 
@@ -23,6 +25,7 @@ class RCircularContainer extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(radius),
