@@ -24,5 +24,11 @@ class RImages{
   static const String dorm = "assets/icons/categories/dorm.png"; 
   static const String house = "assets/icons/categories/house.png"; 
   static const String resthouse = "assets/icons/categories/resthouse.png"; 
+
+  //PROMO BANNERS
+  static const String banner1 = "assets/images/banners/1.png"; 
+  static const String banner2 = "assets/images/banners/2.png"; 
+  static const String banner3 = "assets/images/banners/3.png"; 
+
 }
 

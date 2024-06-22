@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:rentnest/commons/widgets/custom_shape/container/primary_header_container.dart';
 import 'package:rentnest/commons/widgets/custom_shape/container/search_container.dart';
 import 'package:rentnest/commons/widgets/texts/section_headings.dart';
 import 'package:rentnest/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:rentnest/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:rentnest/utils/constants/colors.dart';
+import 'package:rentnest/utils/constants/image_strings.dart';
 import "package:rentnest/utils/constants/sizes.dart";
 
 class HomeScreen extends StatelessWidget {
@@ -11,12 +14,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             ///Header
-            RPrimaryHeaderContainer(
+            const RPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// appbar
@@ -46,12 +49,19 @@ class HomeScreen extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+
+            ///BODY
+            Padding(
+              padding: const EdgeInsets.all(RSizes.defaultSpace),
+              child: Container(
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(RSizes.md)),
+                child: ClipRRect(borderRadius: BorderRadius.circular(RSizes.md),child: const Image(image: AssetImage(RImages.banner3))),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
