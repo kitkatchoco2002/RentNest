@@ -5,7 +5,6 @@ import 'package:rentnest/commons/widgets/custom_shape/container/circular_contain
 import 'package:rentnest/commons/widgets/images/rounded_image.dart';
 import 'package:rentnest/features/shop/controllers/home_controller.dart';
 import 'package:rentnest/utils/constants/colors.dart';
-import 'package:rentnest/utils/constants/image_strings.dart';
 import 'package:rentnest/utils/constants/sizes.dart';
 import 'package:rentnest/utils/helpers/helper_function.dart';
 

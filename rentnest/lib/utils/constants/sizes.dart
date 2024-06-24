@@ -50,23 +50,23 @@ static const double productImageRadius = 16.0;
 static const double productItemHeight = 160.0;
 
 //input field
-static double inputFieldRadius = 12.0;
-static double spaceBetweenInputFields = 16.0;
+static const double inputFieldRadius = 12.0;
+static const double spaceBetweenInputFields = 16.0;
 
 //Card Sizes
-static double cardRadiusLg = 16.0;
-static double cardRadiusMd = 12.0;
-static double cardRadiusSm = 10.0;
-static double cardRadiusXs = 6.0;
-static double cardElevation = 2.0;
+static const double cardRadiusLg = 16.0;
+static const double cardRadiusMd = 12.0;
+static const double cardRadiusSm = 10.0;
+static const double cardRadiusXs = 6.0;
+static const double cardElevation = 2.0;
 
 //image carousel height
-static double imageCarouselHeight = 200.0;
+static const double imageCarouselHeight = 200.0;
 
 //loading indicator size
-static double loadingIndicatorSize= 36.0;
+static const double loadingIndicatorSize= 36.0;
 
 //grid view spacing
-static double gridviewSpacing = 16.0;
+static const double gridviewSpacing = 16.0;
 
 }

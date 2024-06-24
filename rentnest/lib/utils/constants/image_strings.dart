@@ -30,5 +30,10 @@ class RImages{
   static const String banner2 = "assets/images/banners/2.png"; 
   static const String banner3 = "assets/images/banners/3.png"; 
 
+  // -- Product Images
+  static const String product1 = "assets/images/products/condo.jpg";
+  static const String product2 = "assets/images/products/dorm.png";
+  static const String product3 = "assets/images/products/FP_4P_Bunks_1.jpg";
+  static const String product4 = "assets/images/products/Have-it-all-studio-apartment-587e9d153df78c17b6d4f076.jpg";
 }
 
