@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:rentnest/commons/styles/shadows.dart';
 import 'package:rentnest/commons/widgets/custom_shape/container/rounded_container.dart';
 import 'package:rentnest/commons/widgets/icons/circular_icon.dart';
 import 'package:rentnest/commons/widgets/images/rounded_image.dart';
+import 'package:rentnest/commons/widgets/texts/product_title_text.dart';
 import 'package:rentnest/utils/constants/colors.dart';
 import 'package:rentnest/utils/constants/image_strings.dart';
 import 'package:rentnest/utils/constants/sizes.dart';
@@ -25,7 +27,7 @@ class RProductCardVertical extends StatelessWidget {
         children: [
           /// THUMBNAIL,  WISHLIST BUTTON, DISCOUN TAG
           RRoundedContainer(
-            height: 180,
+            height: 150,
             padding: const EdgeInsets.all(RSizes.sm),
             backgroundColor: dark ? RColors.dark : RColors.light,
             child: Stack(
@@ -36,12 +38,12 @@ class RProductCardVertical extends StatelessWidget {
 
                 /// -- Sale tag
                 Positioned(
-                  top: 12,
+                  top: 10,
                   child: RRoundedContainer(
                     radius: RSizes.sm,
                     backgroundColor: RColors.secondary.withOpacity(0.8),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: RSizes.md, vertical: RSizes.xs),
+                        horizontal: RSizes.sm, vertical: RSizes.xs),
                     child: Text('25%',
                         style: Theme.of(context)
                             .textTheme
@@ -61,10 +63,20 @@ class RProductCardVertical extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(height: RSizes.spaceBtwnItms / 2),
 
           ///  -- DETAILS
+          const Padding(
+            padding: EdgeInsets.only(left: RSizes.sm),
+            child: Column(
+              children: [
+                RProductText(title: 'Apartment for Rent', smallSize: true,),
+              ],
+            ),
+          )
         ],
       ),
     );
   }
 }
+
