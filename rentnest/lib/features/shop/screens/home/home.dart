@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rentnest/commons/widgets/custom_shape/container/primary_header_container.dart';
 import 'package:rentnest/commons/widgets/custom_shape/container/search_container.dart';
+import 'package:rentnest/commons/widgets/layouts/grid_layout.dart';
 import 'package:rentnest/commons/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:rentnest/commons/widgets/texts/section_headings.dart';
 import 'package:rentnest/features/shop/screens/home/widgets/home_appbar.dart';
@@ -14,12 +15,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             ///Header
-            RPrimaryHeaderContainer(
+            const RPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// appbar
@@ -53,17 +54,25 @@ class HomeScreen extends StatelessWidget {
 
             ///BODY
             Padding(
-              padding: EdgeInsets.all(RSizes.defaultSpace),
+              padding: const EdgeInsets.all(RSizes.defaultSpace),
               child: Column(
                 children: [
                   /// --PROMO SLIDER --
-                  RPromoSlider(banners: [RImages.banner1,RImages.banner2,RImages.banner3],),
-                  SizedBox(height: RSizes.spaceBtwnSections,),
+                  const RPromoSlider(
+                    banners: [
+                      RImages.banner1,
+                      RImages.banner2,
+                      RImages.banner3
+                    ],
+                  ),
+                  const SizedBox(
+                    height: RSizes.spaceBtwnSections,
+                  ),
+
                   /// -- POPULAR PRODUCTS --
-                  RProductCardVertical()
+                  RGridLayout(itemCount: 6, itemBuilder: (_, index) => RProductCardVertical(),),
                 ],
               ),
-              
             ),
           ],
         ),
