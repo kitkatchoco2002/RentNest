@@ -21,7 +21,7 @@ class RHomeAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        RCartCounterIcon(onPressed: () {},)
+        RCartCounterIcon(onPressed: () {},icon: Icon(Icons.favorite_rounded, color: RColors.white,),)
         
       ],
     );

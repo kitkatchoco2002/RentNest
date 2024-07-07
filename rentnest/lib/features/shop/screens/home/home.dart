@@ -20,31 +20,31 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             ///Header
-            const RPrimaryHeaderContainer(
+            RPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// appbar
-                  RHomeAppBar(),
-                  SizedBox(height: RSizes.spaceBtwnSections),
+                  const RHomeAppBar(),
+                  const SizedBox(height: RSizes.spaceBtwnSections),
 
                   ///searchbar
-                  RSearchContainer(
+                  const RSearchContainer(
                     text: 'Search in Store',
                     icon: Icons.search_rounded,
                   ),
-                  SizedBox(height: RSizes.spaceBtwnSections),
+                  const SizedBox(height: RSizes.spaceBtwnSections),
 
                   ///catergories
                   Padding(
-                    padding: EdgeInsets.only(left: RSizes.defaultSpace),
+                    padding: const EdgeInsets.only(left: RSizes.defaultSpace),
                     child: Column(
                       children: [
                         ///headings
-                        RSectionHeading(title: 'Popular Category'),
-                        SizedBox(height: RSizes.spaceBtwnItms),
+                        RSectionHeading(title: 'Popular Category', onPressed: (){},),
+                        const SizedBox(height: RSizes.spaceBtwnItms),
 
                         ///categories
-                        RHomeCategories()
+                        const RHomeCategories()
                       ],
                     ),
                   )
@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   /// -- POPULAR PRODUCTS --
-                  RGridLayout(itemCount: 6, itemBuilder: (_, index) => RProductCardVertical(),),
+                  RGridLayout(itemCount: 6, itemBuilder: (_, index) => const RProductCardVertical()),
                 ],
               ),
             ),

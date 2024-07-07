@@ -3,16 +3,17 @@ import 'package:rentnest/utils/constants/colors.dart';
 
 class RCartCounterIcon extends StatelessWidget {
   const RCartCounterIcon({
-    super.key, required this.onPressed,
+    super.key, required this.onPressed, required this.icon,
   });
 
   final VoidCallback onPressed;
+  final Icon icon;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        IconButton(onPressed: onPressed , icon: const Icon(Icons.favorite_rounded, color: RColors.white,)),
+        IconButton(onPressed: onPressed , icon: icon),
         Positioned(
           right: 0,
           child: Container(
