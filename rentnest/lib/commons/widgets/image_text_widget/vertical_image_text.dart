@@ -9,7 +9,7 @@ class RVerticalImageText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = RColors.white,
-    this.backgroundColor = RColors.white,
+    this.backgroundColor,
     this.ontap,
   });
 

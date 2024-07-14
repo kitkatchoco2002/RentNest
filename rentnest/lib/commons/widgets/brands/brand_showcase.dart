@@ -18,7 +18,7 @@ class RBrandShowcase extends StatelessWidget {
   Widget build(BuildContext context) {
     return RRoundedContainer(
       showBorder: true,
-      padding: EdgeInsets.all(RSizes.md),
+      padding: const EdgeInsets.all(RSizes.md),
       borderColor: RColors.darkgrey,
       backgroundColor: Colors.transparent,
       margin: const EdgeInsets.only(bottom: RSizes.spaceBtwnItms),

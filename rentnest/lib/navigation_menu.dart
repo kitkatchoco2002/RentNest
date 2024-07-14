@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rentnest/features/personalization/screens/settings/settings.dart';
+import 'package:rentnest/features/shop/screens/favorites/favorites.dart';
 import 'package:rentnest/features/shop/screens/home/home.dart';
 import 'package:rentnest/features/shop/screens/store/store.dart';
 
@@ -35,5 +37,5 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screen = [const HomeScreen(), const StoreScreen(), Container(color: Colors.yellow,), Container(color: Colors.orange,)];
+  final screen = [const HomeScreen(), const StoreScreen(), const FavoriteScreen(), const SettingsScreen()];
 }

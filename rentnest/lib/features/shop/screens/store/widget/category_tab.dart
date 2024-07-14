@@ -23,15 +23,14 @@ class RCategoryTab extends StatelessWidget {
         child: Column(
           children: [
             //--BRANDS
-            const RBrandShowcase(
-              images: [RImages.product1, RImages.product2, RImages.product3],
-            ),
+            const RBrandShowcase(images: [RImages.product1, RImages.product2, RImages.product3]),
+            const SizedBox(height: RSizes.spaceBtwnItms),
             //--PRODUCTS
             RSectionHeading(title: "You might like", onPressed: () {}),
             const SizedBox(height: RSizes.spaceBtwnItms),
 
-            RGridLayout(
-                itemCount: 6, itemBuilder: (_, index) => RProductCardVertical())
+            RGridLayout(itemCount: 6, itemBuilder: (_, index) => const RProductCardVertical()),
+            const SizedBox(height: RSizes.spaceBtwnItms),
           ],
         ),
       )

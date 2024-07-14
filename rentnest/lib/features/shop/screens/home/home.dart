@@ -40,17 +40,32 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         ///headings
-                        RSectionHeading(title: 'Popular Category', onPressed: (){},),
+                        RSectionHeading(
+                          title: 'Popular Category',
+                          onPressed: () {},
+                        ),
                         const SizedBox(height: RSizes.spaceBtwnItms),
 
                         ///categories
-                        const RHomeCategories()
+                        const RHomeCategories(
+                          images: [
+                            RImages.apartment,
+                            RImages.house,
+                            RImages.dorm,
+                            RImages.resthouse,
+                            RImages.condo,
+                            RImages.product1
+                          ],
+                          titles: ["Apartment", "Houses", "Dorm", "RestHouse", "Condo", "Product1"],
+                        )
                       ],
-                    ),
-                  )
+                    )
+                  ),
+                  const SizedBox(height: RSizes.spaceBtwnSections)
                 ],
               ),
             ),
+            
 
             ///BODY
             Padding(
@@ -70,7 +85,9 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   /// -- POPULAR PRODUCTS --
-                  RGridLayout(itemCount: 6, itemBuilder: (_, index) => const RProductCardVertical()),
+                  RGridLayout(
+                      itemCount: 6,
+                      itemBuilder: (_, index) => const RProductCardVertical()),
                 ],
               ),
             ),
@@ -80,4 +97,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-

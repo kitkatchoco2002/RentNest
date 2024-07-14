@@ -7,7 +7,6 @@ import 'package:rentnest/commons/widgets/products/product_cards/product_price.da
 import 'package:rentnest/commons/widgets/texts/brand_title_with_verification.dart';
 import 'package:rentnest/commons/widgets/texts/product_title_text.dart';
 import 'package:rentnest/utils/constants/colors.dart';
-import 'package:rentnest/utils/constants/enums.dart';
 import 'package:rentnest/utils/constants/image_strings.dart';
 import 'package:rentnest/utils/constants/sizes.dart';
 import 'package:rentnest/utils/helpers/helper_function.dart';
