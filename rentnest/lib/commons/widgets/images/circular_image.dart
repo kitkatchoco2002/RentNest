@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rentnest/utils/constants/colors.dart';
-import 'package:rentnest/utils/constants/image_strings.dart';
 import 'package:rentnest/utils/constants/sizes.dart';
 import 'package:rentnest/utils/helpers/helper_function.dart';
 

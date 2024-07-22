@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rentnest/commons/widgets/appbar/appbar.dart';
 import 'package:rentnest/commons/widgets/products/cart/cart_menu_icon.dart';
@@ -21,7 +20,7 @@ class RHomeAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        RCartCounterIcon(onPressed: () {},icon: Icon(Icons.favorite_rounded, color: RColors.white,),)
+        RCartCounterIcon(onPressed: () {},icon: const Icon(Icons.favorite_rounded, color: RColors.white,),)
         
       ],
     );

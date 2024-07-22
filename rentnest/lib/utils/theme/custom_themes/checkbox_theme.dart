@@ -7,14 +7,14 @@ class RCheckBoxTheme{
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateColor.resolveWith((states) {
       if(states.contains(WidgetState.selected)){
-        return Color.fromARGB(255, 171, 2, 30);
+        return const Color.fromARGB(255, 171, 2, 30);
       }else{
-        return Color.fromARGB(255, 34, 33, 33);
+        return const Color.fromARGB(255, 34, 33, 33);
       }
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if(states.contains(WidgetState.selected)){
-        return Color.fromARGB(255, 184, 194, 193);
+        return const Color.fromARGB(255, 184, 194, 193);
       }else{
         return Colors.transparent;
       }
@@ -25,14 +25,14 @@ class RCheckBoxTheme{
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateColor.resolveWith((states) {
       if(states.contains(WidgetState.selected)){
-        return Color.fromARGB(255, 171, 2, 30);
+        return const Color.fromARGB(255, 171, 2, 30);
       }else{
-        return Color.fromARGB(255, 34, 33, 33);
+        return const Color.fromARGB(255, 34, 33, 33);
       }
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if(states.contains(WidgetState.selected)){
-        return Color.fromARGB(255, 184, 194, 193);
+        return const Color.fromARGB(255, 184, 194, 193);
       }else{
         return Colors.transparent;
       }

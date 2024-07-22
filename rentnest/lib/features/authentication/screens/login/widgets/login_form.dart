@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:rentnest/features/authentication/screens/password_configurations/forget_password.dart';
 import 'package:rentnest/features/authentication/screens/sign_up/signup.dart';
@@ -40,7 +39,7 @@ class _RLoginFormState extends State<RLoginForm> {
               return null;
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: RSizes.spaceBetweenInputFields,
           ),
     
@@ -68,7 +67,7 @@ class _RLoginFormState extends State<RLoginForm> {
             },
           ),
 
-          SizedBox(height: RSizes.spaceBetweenInputFields / 2),
+          const SizedBox(height: RSizes.spaceBetweenInputFields / 2),
     
           ///Remember me & Forget password
           Row(
@@ -99,7 +98,7 @@ class _RLoginFormState extends State<RLoginForm> {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => Get.to(NavigationMenu()),
+                  onPressed: () => Get.to(const NavigationMenu()),
                   child: const Text(RTexts.signIn))),
           const SizedBox(
             height: RSizes.spaceBtwnItms,
@@ -109,7 +108,7 @@ class _RLoginFormState extends State<RLoginForm> {
           SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                  onPressed: () => Get.to(() => SIgnUpScreen()),
+                  onPressed: () => Get.to(() => const SIgnUpScreen()),
                   child: const Text(RTexts.createAcc)))
         ],
       ),

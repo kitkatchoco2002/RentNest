@@ -3,7 +3,6 @@ import 'package:rentnest/commons/widgets/brands/brand_card.dart';
 import 'package:rentnest/commons/widgets/custom_shape/container/rounded_container.dart';
 import 'package:rentnest/commons/widgets/images/rounded_image.dart';
 import 'package:rentnest/utils/constants/colors.dart';
-import 'package:rentnest/utils/constants/image_strings.dart';
 import 'package:rentnest/utils/constants/sizes.dart';
 import 'package:rentnest/utils/helpers/helper_function.dart';
 

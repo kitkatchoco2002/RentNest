@@ -5,16 +5,16 @@ class RBottomSheetTheme{
 
   static BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: Color.fromARGB(255, 184, 194, 193),
-    modalBackgroundColor: Color.fromARGB(255, 184, 194, 193),
-    constraints:  BoxConstraints(minWidth: double.infinity),
+    backgroundColor: const Color.fromARGB(255, 184, 194, 193),
+    modalBackgroundColor: const Color.fromARGB(255, 184, 194, 193),
+    constraints:  const BoxConstraints(minWidth: double.infinity),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );
 
   static BottomSheetThemeData darkBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: Color.fromARGB(255, 6, 32, 54),
-    modalBackgroundColor: Color.fromARGB(255, 6, 32, 54),
-    constraints:  BoxConstraints(minWidth: double.infinity),
+    backgroundColor: const Color.fromARGB(255, 6, 32, 54),
+    modalBackgroundColor: const Color.fromARGB(255, 6, 32, 54),
+    constraints:  const BoxConstraints(minWidth: double.infinity),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),);
 }

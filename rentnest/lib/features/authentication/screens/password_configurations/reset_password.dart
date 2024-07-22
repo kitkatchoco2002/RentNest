@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:rentnest/utils/constants/image_strings.dart';
 import 'package:rentnest/utils/constants/sizes.dart';
 import 'package:rentnest/utils/constants/text_strings.dart';
@@ -21,11 +20,11 @@ class ResetPassword extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(RSizes.defaultSpace),
+          padding: const EdgeInsets.all(RSizes.defaultSpace),
           child: Column(
             children: [
               ///IMAGE
-              Align(alignment: Alignment.topCenter,child: Image(image: AssetImage(RImages.deliverImage),height: RHelperFunctions.screenSizeHeight()*0.4, width: RHelperFunctions.screenSizeWidth()  )),
+              Align(alignment: Alignment.topCenter,child: Image(image: const AssetImage(RImages.deliverImage),height: RHelperFunctions.screenSizeHeight()*0.4, width: RHelperFunctions.screenSizeWidth()  )),
               const SizedBox(height: RSizes.spaceBtwnSections,),
 
               ///TITLE&SUBTITLE
@@ -37,7 +36,7 @@ class ResetPassword extends StatelessWidget {
               ///BUTTONS
               SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(RTexts.rContinue)),),
               const SizedBox(height: RSizes.spaceBtwnItms),
-              TextButton(onPressed: (){}, child: Text(RTexts.resendEmail))
+              TextButton(onPressed: (){}, child: const Text(RTexts.resendEmail))
             ],
           ),
         ),

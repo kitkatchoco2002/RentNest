@@ -16,7 +16,7 @@ class RAppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
-    primaryColor: Color.fromARGB(255, 6, 32, 54),
+    primaryColor: const Color.fromARGB(255, 6, 32, 54),
     textTheme: RTextTheme.lightTextTheme,
     chipTheme: RChipTheme.lightChipThemeData,
     scaffoldBackgroundColor: Colors.white,
@@ -26,14 +26,14 @@ class RAppTheme {
     elevatedButtonTheme: RElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: ROutlineButtonTheme.lightOUtlineButtonTheme,
     inputDecorationTheme: RTextFieldTheme.lightTextFieldTheme,
-    iconTheme: IconThemeData(color: RColors.primary),
+    iconTheme: const IconThemeData(color: RColors.primary),
   );
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
-    primaryColor: Color.fromARGB(255, 6, 32, 54),
+    primaryColor: const Color.fromARGB(255, 6, 32, 54),
     textTheme: RTextTheme.darkTextTheme,
     chipTheme: RChipTheme.darkChipThemeData,
     scaffoldBackgroundColor: Colors.black,
@@ -43,7 +43,7 @@ class RAppTheme {
     elevatedButtonTheme: RElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: ROutlineButtonTheme.darkOUtlineButtonTheme,
     inputDecorationTheme: RTextFieldTheme.darkTextFieldTheme,
-    iconTheme: IconThemeData(color: RColors.accent),
+    iconTheme: const IconThemeData(color: RColors.accent),
   );
 
 }

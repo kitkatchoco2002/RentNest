@@ -5,7 +5,6 @@ import 'package:rentnest/commons/widgets/products/product_cards/product_card_ver
 import 'package:rentnest/commons/widgets/texts/section_headings.dart';
 import 'package:rentnest/utils/constants/image_strings.dart';
 import 'package:rentnest/utils/constants/sizes.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class RCategoryTab extends StatelessWidget {
   const RCategoryTab({

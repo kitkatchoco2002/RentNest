@@ -5,8 +5,8 @@ class RTextFieldTheme{
 
   static InputDecorationTheme lightTextFieldTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Color.fromARGB(255, 6, 32, 54),
-    suffixIconColor: Color.fromARGB(255, 6, 32, 54),
+    prefixIconColor: const Color.fromARGB(255, 6, 32, 54),
+    suffixIconColor: const Color.fromARGB(255, 6, 32, 54),
     // constraints: const BoxConstraints.expand(height: 14.inputFieldHeight)
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
@@ -36,8 +36,8 @@ class RTextFieldTheme{
 
   static InputDecorationTheme darkTextFieldTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Color.fromARGB(255, 6, 32, 54),
-    suffixIconColor: Color.fromARGB(255, 6, 32, 54),
+    prefixIconColor: const Color.fromARGB(255, 6, 32, 54),
+    suffixIconColor: const Color.fromARGB(255, 6, 32, 54),
     // constraints: const BoxConstraints.expand(height: 14.inputFieldHeight)
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class RProductPrice extends StatelessWidget {
   const RProductPrice({
     super.key,
-    this.currencySign = '\₱',
+    this.currencySign = '₱',
     required this.price,
     this.maxLines = 1,
     this.isLarge = false,

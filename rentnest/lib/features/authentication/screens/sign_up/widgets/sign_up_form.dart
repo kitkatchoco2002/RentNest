@@ -35,7 +35,7 @@ class _RSignUpFormState extends State<RSignUpForm> {
                   labelText: RTexts.firstname.capitalize,
                   prefixIcon:  const Icon(Icons.person_sharp)),
             )),
-             SizedBox(width: RSizes.spaceBetweenInputFields),
+             const SizedBox(width: RSizes.spaceBetweenInputFields),
              Expanded(
                 child: TextFormField(
               expands: false,
@@ -46,7 +46,7 @@ class _RSignUpFormState extends State<RSignUpForm> {
           ],
         ),
         
-        SizedBox(height: RSizes.spaceBetweenInputFields,),
+        const SizedBox(height: RSizes.spaceBetweenInputFields,),
     
         ///USERNAME
         TextFormField(
@@ -54,7 +54,7 @@ class _RSignUpFormState extends State<RSignUpForm> {
           decoration: const InputDecoration(labelText: RTexts.username, prefixIcon: Icon(Icons.account_circle) )
         ),
     
-        SizedBox(height: RSizes.spaceBetweenInputFields,),
+        const SizedBox(height: RSizes.spaceBetweenInputFields,),
     
         /// EMAIL
         TextFormField(
@@ -62,7 +62,7 @@ class _RSignUpFormState extends State<RSignUpForm> {
           decoration: const InputDecoration(labelText: RTexts.email, prefixIcon: Icon(Icons.mail) )
         ),
     
-        SizedBox(height: RSizes.spaceBetweenInputFields,),
+        const SizedBox(height: RSizes.spaceBetweenInputFields,),
     
         ///PHONE NUMBER
         TextFormField(
@@ -70,7 +70,7 @@ class _RSignUpFormState extends State<RSignUpForm> {
           decoration: const InputDecoration(labelText: RTexts.phoneNumber, prefixIcon: Icon(Icons.phone) )
         ),
     
-        SizedBox(height: RSizes.spaceBetweenInputFields,),
+        const SizedBox(height: RSizes.spaceBetweenInputFields,),
     
         ///Password
         TextFormField(
@@ -102,7 +102,7 @@ class _RSignUpFormState extends State<RSignUpForm> {
          const RTermsAndConditionCheckBox(),
          const SizedBox(height: RSizes.spaceBtwnSections,),
     
-         SizedBox(width: double.infinity,child: ElevatedButton(onPressed: () => Get.to(()=>VerifyEmailScreen()), child: Text(RTexts.createAcc))),
+         SizedBox(width: double.infinity,child: ElevatedButton(onPressed: () => Get.to(()=>const VerifyEmailScreen()), child: const Text(RTexts.createAcc))),
       ],
     ));
   }

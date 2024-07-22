@@ -25,10 +25,10 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             children: [
               //Headline part Logo, Title, Subtitle
-              RLoginHeader(),
+              const RLoginHeader(),
 
               ///FORM
-              RLoginForm(),
+              const RLoginForm(),
 
               ///Divider
               RLoginFormDivider(dividerText: RTexts.orSignInWith.capitalize!,),
